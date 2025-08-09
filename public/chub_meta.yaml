@@ -8,3 +8,5 @@ position: 'NONE'
 
 # We don't need user configurations for this stage.
 # config_schema: null
+github_path: 'https://github.com/Tyke03/Marked-Idol'
+
