@@ -10,3 +10,6 @@ position: 'NONE'
 # config_schema: null
 github_path: 'https://github.com/Tyke03/Marked-Idol'
 
+
+extension_id: 'marked-idol-8a34b31d7944'
+
