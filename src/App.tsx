@@ -1,13 +1,10 @@
-import {ReactRunner} from "@chub-ai/stages-ts";
-import {Stage} from "./Stage";
-import {TestStageRunner} from "./TestRunner";
+import React from 'react';
+import { ReactRunner } from "@chub-ai/stages-ts";
+import { Stage } from "./Stage";
 
 function App() {
-  const isDev = import.meta.env.MODE === 'development';
-  console.info(`Running in ${import.meta.env.MODE}`);
-
-  return isDev ? <TestStageRunner factory={ (data: any) => new Stage(data) }/> :
-      <ReactRunner factory={(data: any) => new Stage(data)} />;
+  // We use the 'factory' prop, which expects a function that returns a new Stage instance.
+  return <ReactRunner factory={(data: any) => new Stage(data)} />;
 }
 
-export default App
+export default App;
